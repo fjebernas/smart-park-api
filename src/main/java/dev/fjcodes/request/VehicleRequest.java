@@ -20,6 +20,7 @@ public class VehicleRequest {
 	@NotBlank
 	private String licensePlate;
 
+	@Pattern(regexp = "^[A-Za-z ]+$", message = "Only letters and spaces are allowed")
 	@NotBlank
 	private String ownerName;
 
