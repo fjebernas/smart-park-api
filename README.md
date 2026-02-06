@@ -60,4 +60,12 @@ mvn clean test
 ---
 
 
+## 📬 API Testing (Postman)
+
+A ready-to-use **Postman collection** is included in the project:
+
+See the **postman** folder at the **root** of the project.
+
+---
+
 **SmartPark – Parking Management System** 🚗🅿️ by **fjcodes**

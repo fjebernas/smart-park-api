@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "e4794336-e0a4-4b4d-ae2f-d16bccd382a3",
+		"name": "SmartPark API Collection",
+		"description": "Postman collection for SmartPark parking management REST APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25722600"
+	},
+	"item": [
+		{
+			"name": "Register Parking Lot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"lotId\": \"LOT-C\",\n  \"location\": \"Airport\",\n  \"capacity\": 20,\n  \"occupiedSpaces\": 20\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/smartpark/v1/parkingLots",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"smartpark",
+						"v1",
+						"parkingLots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Vehicle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"licensePlate\": \"NEW-111\",\n  \"type\": \"CAR\",\n  \"ownerName\": \"Jane Doe\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/smartpark/v1/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"smartpark",
+						"v1",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check-in Vehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/smartpark/v1/parkingLots/LOT-B/checkin/NEW-111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"smartpark",
+						"v1",
+						"parkingLots",
+						"LOT-B",
+						"checkin",
+						"NEW-111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check-out Vehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/smartpark/v1/parkingLots/LOT-A/checkout/ABC-123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"smartpark",
+						"v1",
+						"parkingLots",
+						"LOT-A",
+						"checkout",
+						"ABC-123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Parking Lot Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/smartpark/v1/parkingLots/LOT-B/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"smartpark",
+						"v1",
+						"parkingLots",
+						"LOT-B",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicles in Lot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/smartpark/v1/parkingLots/LOT-B/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"smartpark",
+						"v1",
+						"parkingLots",
+						"LOT-B",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
