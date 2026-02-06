@@ -1,6 +1,6 @@
-# SmartPark Project
+# SmartPark API Project
 
-SmartPark is a Spring Boot application for managing parking lots, vehicles, and check-in/check-out operations.
+SmartPark API is a Spring Boot application for managing parking lots, vehicles, and check-in/check-out operations.
 
 ---
 
