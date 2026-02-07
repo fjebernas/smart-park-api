@@ -4,26 +4,17 @@ SmartPark API is a Spring Boot application for managing parking lots, vehicles, 
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
-### Required
 
 * **Java 8** (JDK 8)
 * **Maven 3.6+**
-* **Git** (optional)
-
-Check versions:
-
-```bash
-java -version
-mvn -version
-```
 
 ---
 
-## 🛠 Build Instructions
+## Build Instructions
 
-From project root:
+From project **root**:
 
 ```bash
 mvn clean compile
@@ -31,7 +22,7 @@ mvn clean compile
 
 ---
 
-## ▶️ Run Application
+##  Run Application
 
 ```bash
 mvn spring-boot:run
@@ -52,7 +43,7 @@ http://localhost:8080/api/smartpark/v1
 
 ---
 
-## 🧪 Run Tests
+## Run Tests
 
 ```bash
 mvn clean test
@@ -60,7 +51,7 @@ mvn clean test
 ---
 
 
-## 📬 API Testing (Postman)
+## API Testing (Postman)
 
 A ready-to-use **Postman collection** is included in the project:
 
@@ -68,4 +59,4 @@ See the **postman** folder at the **root** of the project.
 
 ---
 
-**SmartPark – Parking Management System** 🚗🅿️ by **fjcodes**
+**SmartPark API** by **fjcodes**
